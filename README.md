@@ -48,7 +48,7 @@
 		i) audio_type : defines the type of audio file(Expected input: song, audiobook, podcast)
 		ii) podcastName : Name of podcast
 		iii) podcastHost : Host of podcast
-		iv) podcastParticipants : participents
+		iv) podcastParticipants : participents, comma seperated name's 10 count max
 		v) audio : variable sotring the file to be uploaded.
 
 ######################################################
