@@ -6,42 +6,31 @@
 
 
 
+|______________________NOTES_____________________|
 
+    1) Details of Database can be changed from the program file. The default databse details are:
+    
+	mydb = mysql.connector.connect(
+	  	host="localhost",
+  		user="root",
+  		password="",
+  		database="audio_test"
+		)
 
+    2) The code itself will create the nessary tables required for SQL.
 
+    3) The allowed audio file type can be added on and reduced  by changing the details in program 
+       variable named:
+			ALLOWED_EXTENSIONS = {'mp3', 'wav'}
 
-|------------------------------------------------|
-|______________________NOTES_____________________|------------------------------------------------------
--
--    1) Details of Database can be changed from the program file. The default databse details are:
--    
--	mydb = mysql.connector.connect(
--	  	host="localhost",
--  		user="root",
--  		password="",
--  		database="audio_test"
--		)
--
--   2) The code itself will create the nessary tables required for SQL.
--
--    3) The allowed audio file type can be added on and reduced  by changing the details in program 
--       variable named:
--			ALLOWED_EXTENSIONS = {'mp3', 'wav'}
-----------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-############################################################################################################
+######################################################
               Details about Create API:-
 ######################################################
 
-URL: http://127.0.0.1:5000/
-Type of request: POST
+-URL: http://127.0.0.1:5000/
+-Type of request: POST
 
-Variables of request body:
+       Variables of request body:
 
         1) Song Audio type:
 		i) audio_type : defines the type of audio file(Expected input: song, audiobook, podcast)
@@ -62,14 +51,14 @@ Variables of request body:
 		iv) podcastParticipants : participents
 		v) audio : variable sotring the file to be uploaded.
 
-############################################################################################################
+######################################################
                Details about Update API:-
 ######################################################
 
-URL: http://127.0.0.1:5000/<audioFileType>/<audioFileID>
-Type of request: PUT
+-URL: http://127.0.0.1:5000/<audioFileType>/<audioFileID>
+-Type of request: PUT
 
-Variables of request body:
+     Variables of request body:
 
 	1) Song Audio type:
 		i) audio_type : defines the type of audio file(Expected input: song, audiobook, podcast)
@@ -90,7 +79,7 @@ Variables of request body:
 		iv) podcastParticipants : participents
 		v) audio : variable sotring the file to be uploaded.
 
-############################################################################################################
+######################################################
                Details about GET API:-
 ######################################################
 
@@ -104,7 +93,7 @@ Variables of request body:
 		URL: http://127.0.0.1:5000/<audioFileType>
 		Type of request: GET
 
-############################################################################################################
+######################################################
                Details about delete API:-
 ######################################################
 
@@ -113,7 +102,3 @@ Variables of request body:
 		URL: http://127.0.0.1:5000/<audioFileType>/<audioFileID>
 		Type of request: DELETE
 
-
-############################################################################################################
-
-############################################################################################################
