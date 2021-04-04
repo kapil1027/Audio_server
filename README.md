@@ -1,11 +1,6 @@
 # Audio_server
 
 
-
-
-
-
-
 |______________________NOTES_____________________|
 
     1) Details of Database can be changed from the program file. The default databse details are:
@@ -28,6 +23,7 @@
 ######################################################
 
 -URL: http://127.0.0.1:5000/
+
 -Type of request: POST
 
        Variables of request body:
@@ -55,7 +51,7 @@
                Details about Update API:-
 ######################################################
 
--URL: http://127.0.0.1:5000/<audioFileType>/<audioFileID>
+-URL: "http://127.0.0.1:5000/<audioFileType>/<audioFileID>"
 -Type of request: PUT
 
      Variables of request body:
